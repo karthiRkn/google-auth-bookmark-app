@@ -1,12 +1,12 @@
+// Disable prerendering for this page
+export const dynamic = 'force-dynamic';
+
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
-
-// Disable prerendering for this page
-export const dynamic = 'force-dynamic';
 
 interface Bookmark {
   id: string;
